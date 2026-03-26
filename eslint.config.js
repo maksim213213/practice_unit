@@ -1,11 +1,21 @@
-module.exports = {
+export default {
   files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
+  ignores: ['mochawesome-report/**'],
   languageOptions: {
     ecmaVersion: 2021,
     sourceType: 'module',
     globals: {
+
       browser: true,
       node: true,
+      module: true,
+      describe: true,
+      it: true,
+      expect: true,
+      beforeEach: true,
+      afterEach: true,
+      before: true,
+      after: true,
     },
   },
   rules: {
