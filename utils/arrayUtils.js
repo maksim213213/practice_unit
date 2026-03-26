@@ -19,5 +19,3 @@ export function removeDuplicates(arr) {
   }
   return [...new Set(arr)];
 }
-
-const a = 1
