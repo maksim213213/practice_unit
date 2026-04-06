@@ -2,6 +2,7 @@
   "name": "practice_unit",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter mochawesome --require @babel/register",
@@ -47,5 +48,9 @@
   },
   "lint-staged": {
     "*.js": "eslint --fix"
+  },
+  "overrides": {
+    "diff": "^8.0.4",
+    "serialize-javascript": "^7.0.5"
   }
 }
